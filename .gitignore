@@ -1,3 +1,6 @@
-# Ignore credentials from database
+# ignore credentials 
 credentials
 credentialsdb.py
+
+# ignore notebook checkpoints
+ipynb_checkpoints

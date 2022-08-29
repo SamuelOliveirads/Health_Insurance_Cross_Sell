@@ -13,14 +13,14 @@ class HealthInsurance:
         self.vintage_scaler = pickle.load(open('features/vintage_scaler.pkl', 'rb'))
 
 
-    def data_cleaning(df1):
+    def data_cleaning(self, df1):
         # drop duplicates id columns
         df1 = df1.loc[:, ~df1.columns.duplicated()].copy()
 
         return df1
 
 
-    def feature_engineering(df2):
+    def feature_engineering(self, df2):
         ## 2.3 Feature Engineering
         # adjust format into vehicle age
         df2['vehicle_age'] = df2['vehicle_age'].apply(lambda x: 'over_2_years' if x == '> 2 Years'
@@ -34,7 +34,7 @@ class HealthInsurance:
         return df2
 
 
-    def data_filtering(df3):
+    def data_filtering(self, df3):
         ## 3.1 Filtragem das linhas
         # select only annual_premium bellow 65.000
         df3 = df3[df3['annual_premium'] < 65000]
@@ -83,7 +83,7 @@ class HealthInsurance:
         df5 = df5.fillna(0)
 
         # select features from Metrics
-        cols_selected = ['id', 'vintage', 'annual_premium', 'age', 'region_code',
+        cols_selected = ['vintage', 'annual_premium', 'age', 'region_code',
                         'vehicle_damage', 'policy_sales_channel', 'previously_insured']
 
 
@@ -95,7 +95,7 @@ class HealthInsurance:
         pred = model.predict_proba( test_data )
 
         # join prediction into original data
-        original_data['score'] = pred
+        original_data['score'] = pred[:, 1].tolist()
 
-        return original_data.to_json(orient='record', date_format='iso')
+        return original_data.to_json(orient='records', date_format='iso')
 

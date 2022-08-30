@@ -1,9 +1,10 @@
 # Cross Sell - Rank to learn
-
+![cross_sell_insurance](docs/intro_insurance.jpg)
 # 1. Business Problem.
 
 ## 1.1 O que é Cross-sell?
-
+ A prática de venda cruzada constitui em oferecer um novo produto complementar ao anterior, esta prática de marketing amplamente utilizada promove aos clientes da empresa um novo produto relacionado ou complementar, é importante não confundir com venda cruzada onde ambos os produtos são vendidos obrigatoriamente atrelados um ao outro, prática ilítica no Brasil.
+ O método de Cross-sell é uma excelente opção de marketing muito difundida no mercado financeiro sendo considerada uma das melhores maneiras de crescimento da empresa, entretanto é necessário grande habilidade nas negociações e principalmente conhecimento do perfil de cada cliente.
 
 ## 1.2 A empresa Insurance All
 A Insurance All é uma empresa que fornece seguro de saúde para seus clientes e o time de produtos está analisando a possibilidade de oferecer aos assegurados, um novo produto: Um seguro de automóveis.
@@ -59,18 +60,21 @@ Utilizei os seguintes princípios da metodologia:
 # 4. Top 3 Data Insights
 
 **Hypothesis 01:** Pessoas com carros comprados recentemente possuem maior interesse em seguro
-[H1]('docs/H1.png')
+
+![H1](docs/H1.png)
 
 **False.** No primeiro gráfico temos grande concentração dos interessados entre 1 a 2 anos, já no segundo conseguimos perceber a relação de crescimento de interesse através dos anos representado pela cor azul.
 
 **Hypothesis 02:** Pessoas mais velhas possuem maior interesse em seguro
-[H3]('docs/H3.png')
+
+![H3](docs/H3.png)
 
 **False.** O primeiro gráfico demonstra a quantidade de votos absoluto por idade, o que nos dá um indício que não há muitos votos de pessoas mais velhas, já no segundo gráficos observamos a quantidade de votos percentuais que confirma a predominancia do interesse em seguro entre 30 a 40 anos. O terceiro gráfico demonstra a maior concentração dos interessados próximo da faixa de 40 anos, frente a 30 anos dos não interessados, já o quarto gráfico confirma uma correlação negativa (quanto maior a idade menor o interesse).
 A conclusão registrada é que pessoas mais velhas possuem menor interesse, portanto hipótese falsa.
 
 **Hypothesis 03:** Pessoas em diferentes regiões possuem maior interesse em seguro
-[H4]('docs/H4.png')
+
+![H4](docs/H4.png)
 
 **True.** O primeiro gráfico corresponde a diferentes regiões por quantidade de votos, embora não haja informação da região em exato é possível extrair a informação de maior interesse em diferentes regiões.
 
@@ -99,7 +103,8 @@ Estabeleço as seguindos métricas:
 
 ## No problema estabelecido de 20.000 ligações teremos:
 
-[Bussines_result]('docs/bussines_result.png')
+![Bussines_result](docs/bussines_result.png)
+
 Ligações aleatória:
  - O time alcança 27% dos interessados, representa uma receita anual de Rs 10.34M (Linha preta pontilhada).
 
@@ -131,21 +136,22 @@ Ordenação do algoritmo:
 A implementação do modelo representa um aumento de 2.55 vezes a receita esperada, uma diferença de Rs 18.71M.
 
 ## 6.1 Deploy model to Google Sheets
-[deploy_google_sheets]('docs/google_sheets.png')
+![deploy_google_sheets](docs/google_sheets.png)
+
 Finalizo o projeto disponibilizando o acesso as predições do modelos no Google planilhas onde permite a equipe preencher novos clientes e verificar sua propenção ao novo produto [Acesso a planilha](https://docs.google.com/spreadsheets/d/1SRCt2r6zaFXkofO31sSk-nQJMJmJoTolRJBZgAKsntU/edit?usp=sharing).
 
 # 7. Lessons Learned
 
-- Balanceamento: O desbalanceamento dos dados podem causar grandes impactos no aprendizado do modelo, para evitar o viés compreendi sobre balanceamento de dados e balanceamento no próprio modelo, na prática os dados tendem a serem desbalanceados o que soma a um grande aprendizado.
-- Métricas: Problemas Rank to learn envolvem outras métricas e o desbalanceamento dos dados também, trabalhar com esses fatores trouxe grande entendimento sobre como observar a performance do modelo e como mensurar o resultado financeiro.
-- Organização de projetos: Implementei uma nova estrutura de pastas e arquivos para o projeto que visam organização e facilidade em localizar, é importante trabalhar essa etapa para evitar problemas com grandes projetos.
-- Entendimento do negócio: A maior habilidade que atribuo a este projeto foi o tempo e conhecimento necessários para entender o modelo de negócio e trabalhar com o projeto ponta a ponta focado na visão financeira, definitivamente trás novas abordagens que fazem mais sentido para a realidade da empresa.
+- **Balanceamento:** O desbalanceamento dos dados podem causar grandes impactos no aprendizado do modelo, para evitar o viés compreendi sobre balanceamento de dados e balanceamento no próprio modelo, na prática os dados tendem a serem desbalanceados o que soma a um grande aprendizado.
+- **Métricas:** Problemas Rank to learn envolvem outras métricas e o desbalanceamento dos dados também, trabalhar com esses fatores trouxe grande entendimento sobre como observar a performance do modelo e como mensurar o resultado financeiro.
+- **Organização de projetos:** Implementei uma nova estrutura de pastas e arquivos para o projeto que visam organização e facilidade em localizar, é importante trabalhar essa etapa para evitar problemas com grandes projetos.
+- **Entendimento do negócio:** A maior habilidade que atribuo a este projeto foi o tempo e conhecimento necessários para entender o modelo de negócio e trabalhar com o projeto ponta a ponta focado na visão financeira, definitivamente trás novas abordagens que fazem mais sentido para a realidade da empresa.
 
 # 8. Next Steps to Improve
 
-- Feature Engineering: Este problema possui poucas features a serem exploradas, trabalhar em novas features certamente trará resultados.
-- EDA: uma exploração detalhada nas principais variáveis que impactam o modelo, mas principalmente novos Insights através das hipóteses.
-- Precisão: Observar os principais erros nas predições e entender o porque, também testar novos modelos com foco em minimizar os falsos positivos e negativos.
+- **Feature Engineering:** Este problema possui poucas features a serem exploradas, trabalhar em novas features certamente trará resultados.
+- **Análise exploratória de dados:** uma exploração detalhada nas principais variáveis que impactam o modelo, mas principalmente novos Insights através das hipóteses.
+- **Precisão dos modelos:** Observar os principais erros nas predições e entender o porque, também testar novos modelos com foco em minimizar os falsos positivos e negativos.
 
 # LICENSE
 

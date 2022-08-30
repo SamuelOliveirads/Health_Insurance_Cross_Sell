@@ -61,20 +61,20 @@ Utilizei os seguintes princípios da metodologia:
 
 **Hypothesis 01:** Pessoas com carros comprados recentemente possuem maior interesse em seguro
 
-![H1](docs/H1.png)
+![H1](https://github.com/SamuelOliveirads/Health_Insurance_Cross_Sell/blob/76d86b74234dd3ef9725f4132767a7cf1cf4da0a/docs/H1.png)
 
 **False.** No primeiro gráfico temos grande concentração dos interessados entre 1 a 2 anos, já no segundo conseguimos perceber a relação de crescimento de interesse através dos anos representado pela cor azul.
 
 **Hypothesis 02:** Pessoas mais velhas possuem maior interesse em seguro
 
-![H3](docs/H3.png)
+![H3](https://github.com/SamuelOliveirads/Health_Insurance_Cross_Sell/blob/76d86b74234dd3ef9725f4132767a7cf1cf4da0a/docs/H3.png)
 
 **False.** O primeiro gráfico demonstra a quantidade de votos absoluto por idade, o que nos dá um indício que não há muitos votos de pessoas mais velhas, já no segundo gráficos observamos a quantidade de votos percentuais que confirma a predominancia do interesse em seguro entre 30 a 40 anos. O terceiro gráfico demonstra a maior concentração dos interessados próximo da faixa de 40 anos, frente a 30 anos dos não interessados, já o quarto gráfico confirma uma correlação negativa (quanto maior a idade menor o interesse).
 A conclusão registrada é que pessoas mais velhas possuem menor interesse, portanto hipótese falsa.
 
 **Hypothesis 03:** Pessoas em diferentes regiões possuem maior interesse em seguro
 
-![H4](docs/H4.png)
+![H4](https://github.com/SamuelOliveirads/Health_Insurance_Cross_Sell/blob/76d86b74234dd3ef9725f4132767a7cf1cf4da0a/docs/H4.png)
 
 **True.** O primeiro gráfico corresponde a diferentes regiões por quantidade de votos, embora não haja informação da região em exato é possível extrair a informação de maior interesse em diferentes regiões.
 
@@ -103,7 +103,7 @@ Estabeleço as seguindos métricas:
 
 ## No problema estabelecido de 20.000 ligações teremos:
 
-![Bussines_result](docs/bussines_result.png)
+![Bussines_result](https://github.com/SamuelOliveirads/Health_Insurance_Cross_Sell/blob/76d86b74234dd3ef9725f4132767a7cf1cf4da0a/docs/bussines_result.png)
 
 Ligações aleatória:
  - O time alcança 27% dos interessados, representa uma receita anual de Rs 10.34M (Linha preta pontilhada).
@@ -136,7 +136,7 @@ Ordenação do algoritmo:
 A implementação do modelo representa um aumento de 2.55 vezes a receita esperada, uma diferença de Rs 18.71M.
 
 ## 6.1 Deploy model to Google Sheets
-![deploy_google_sheets](docs/google_sheets.png)
+![deploy_google_sheets](https://github.com/SamuelOliveirads/Health_Insurance_Cross_Sell/blob/76d86b74234dd3ef9725f4132767a7cf1cf4da0a/docs/google_sheets.png)
 
 Finalizo o projeto disponibilizando o acesso as predições do modelos no Google planilhas onde permite a equipe preencher novos clientes e verificar sua propenção ao novo produto [Acesso a planilha](https://docs.google.com/spreadsheets/d/1SRCt2r6zaFXkofO31sSk-nQJMJmJoTolRJBZgAKsntU/edit?usp=sharing).
 

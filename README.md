@@ -3,7 +3,7 @@
 # 1. Business Problem.
 
 ## 1.1 O que é Cross-sell?
- A prática de venda cruzada constitui em oferecer um novo produto complementar ao anterior, esta prática de marketing amplamente utilizada promove aos clientes da empresa um novo produto relacionado ou complementar, é importante não confundir com venda cruzada onde ambos os produtos são vendidos obrigatoriamente atrelados um ao outro, prática ilítica no Brasil.
+ A prática de venda cruzada constitui em oferecer um novo produto complementar ao anterior, esta prática de marketing amplamente utilizada promove aos clientes da empresa um novo produto relacionado ou complementar, é importante não confundir com venda cruzada onde ambos os produtos são vendidos obrigatoriamente atrelados um ao outro, prática ilícita no Brasil.
  O método de Cross-sell é uma excelente opção de marketing muito difundida no mercado financeiro sendo considerada uma das melhores maneiras de crescimento da empresa, entretanto é necessário grande habilidade nas negociações e principalmente conhecimento do perfil de cada cliente.
 
 ## 1.2 A empresa Insurance All
@@ -20,8 +20,8 @@ Portanto desenvolvi análises e modelos que classifiquem os clientes em interess
 # 2. Business Assumptions.
 Com base em pesquisa de mercado foram tomadas as seguintes suposições de negócio:
 
-- A empresa atua na India, portanto os valores e padrões refletem o local.
-- O valor anual do seguro de saúde pago pelo cliente na Indía será em média Rs 40.000,00 e portanto valores acima de 65.000,00 serão tratados como extremos.
+- A empresa atua na Índia, portanto os valores e padrões refletem o local.
+- O valor anual do seguro de saúde pago pelo cliente na Índía será em média Rs 40.000,00 e, portanto, valores acima de 65.000,00 serão tratados como extremos.
 - Seguros de veículos são obrigatórios por lei.
 - Seguros de veículos não possuem tempo mínimo de carência.
 
@@ -35,7 +35,7 @@ Para resolver o problema de negócio utilizo da metodologia CRISP-DM adaptada pa
 
 Utilizei os seguintes princípios da metodologia:
 
-**Step 01. Data Description:** Coleto os dados a partir de um Banco de dados e realizo uma breve análise e suas estatísticas, também limpo alguns dados com potenciais comprometedoras, o meu objetivo se concentra está em ganhar conhecimento inicial do problema em que estou lidando e começar a planejar quais ferramentas devo utilizar na manipulação para os algorítmos.
+**Step 01. Data Description:** Coleto os dados a partir de um Banco de dados e realizo uma breve análise e suas estatísticas, também limpo alguns dados com potenciais comprometedoras, o meu objetivo se concentra está em ganhar conhecimento inicial do problema em que estou lidando e começar a planejar quais ferramentas devo utilizar na manipulação para os algoritmos.
 
 **Step 02. Feature Engineering:** Desenvolvo hipóteses iniciais sobre o negócio para poder derivar novos atributos com base nas variáveis originais para descrever melhor o fenômeno a ser compreendido, estes atributos podem me auxiliar na validação de hipóteses e no treinamento do modelo de Machine Learning.
 
@@ -45,7 +45,7 @@ Utilizei os seguintes princípios da metodologia:
 
 **Step 04. Exploratory Data Analysis:** A partir das hipóteses geradas na etapa 02 exploro os dados para encontrar insights e entender melhor o impacto das variáveis, também busco compreender o comportamento de cada variável e suas correlações com as demais.
 
-**Step 05. Data Preparation:** Neste processo utilizo das técnicas de preparação dos dados de categóricos para numéricos e também implemento reescalas, por fim realizo o balanceamento dos dados, esses processos visam entregar melhor qualidade para o treinamento dos modelos de Machine Learning.
+**Step 05. Data Preparation:** Neste processo utilizo das técnicas de preparação dos dados de categóricos para numéricos como também implemento reescalas, por fim realizo o balanceamento dos dados, esses processos visam entregar melhor qualidade para o treinamento dos modelos de Machine Learning.
 
 **Step 06. Feature Selection:** Nessa etapa utilizo dos algoritmos Boruta e das árvores de decisões para selecionar as melhores variáveis a um treinamento de Machine Learning, também valido a escolha das variáveis com o conhecimento adquirido na exploração de dados.
 
@@ -53,9 +53,9 @@ Utilizei os seguintes princípios da metodologia:
 
 **Step 08. Hyperparameter Fine Tunning:** Com o objetivo de otimizar o LGBM utilizo da técnica de Bayesian Search para encontrar os melhores parâmetros do Modelo de Machine Learning.
 
-**Step 09. Convert Model Performance to Business Values:** Nesta etapa demonstro por gráficos e textos a expectativa de clientes e de ganhos financeiros com base no problema de negócio, também acresento previsões com base em outras decisões de negócio como dobrar o número de ligações ou atingir 80% dos interessados.
+**Step 09. Convert Model Performance to Business Values:** Nesta etapa demonstro por gráficos e textos a expectativa de clientes e de ganhos financeiros com base no problema de negócio, também acrescento previsões com base em outras decisões de negócio como dobrar o número de ligações ou atingir 80% dos interessados.
 
-**Step 10. Deploy Modelo to Production:** Nesta etapa entendo que o projeto entregou resultado satisfatório e disponibilizo para a equipe via planilha os clientes ordenados pela propensão a aceitar o novo seguro, também acresento uma ferramenta no Google Sheets onde a equipe poderá cadastrar novos clientes e solicitar predições em tempo real.
+**Step 10. Deploy Modelo to Production:** Nesta etapa entendo que o projeto entregou resultado satisfatório e disponibilizo para a equipe via planilha os clientes ordenados pela propensão a aceitar o novo seguro, também acrescento uma ferramenta no Google Sheets onde a equipe poderá cadastrar novos clientes e solicitar predições em tempo real.
 
 # 4. Top 3 Data Insights
 
@@ -69,7 +69,7 @@ Utilizei os seguintes princípios da metodologia:
 
 ![H3](https://github.com/SamuelOliveirads/Health_Insurance_Cross_Sell/blob/76d86b74234dd3ef9725f4132767a7cf1cf4da0a/docs/H3.png)
 
-**False.** O primeiro gráfico demonstra a quantidade de votos absoluto por idade, o que nos dá um indício que não há muitos votos de pessoas mais velhas, já no segundo gráficos observamos a quantidade de votos percentuais que confirma a predominancia do interesse em seguro entre 30 a 40 anos. O terceiro gráfico demonstra a maior concentração dos interessados próximo da faixa de 40 anos, frente a 30 anos dos não interessados, já o quarto gráfico confirma uma correlação negativa (quanto maior a idade menor o interesse).
+**False.** O primeiro gráfico demonstra a quantidade de votos absoluto por idade, o que nos dá um indício que não há muitos votos de pessoas mais velhas, já no segundo gráficos observamos a quantidade de votos percentuais que confirma a predominância do interesse em seguro entre 30 a 40 anos. O terceiro gráfico demonstra a maior concentração dos interessados próximos da faixa de 40 anos, frente a 30 anos dos não interessados, já o quarto gráfico confirma uma correlação negativa (quanto maior a idade menor o interesse).
 A conclusão registrada é que pessoas mais velhas possuem menor interesse, portanto hipótese falsa.
 
 **Hypothesis 03:** Pessoas em diferentes regiões possuem maior interesse em seguro
@@ -91,15 +91,15 @@ Os testes ocorreram com os seguintes algoritmos e suas respectivas performances 
 | K-Nearest Neighbors | 0.871+/-0.011 |	0.748+/-0.009 |
 | Logistic Regression | 0.774+/-0.001 |	0.665+/-0.001 |
     
-Os melhores modelos foram os da família de árvore como o XGBoost e o LGBM, também utilizo o Balanced Random Forest para testar a performance do modelo em balancear os dados, devido a performance similar decido utilizar o LGBM pela a sua velocidade e pouco uso de memória, por último o modelo é otimizado através do Bayesian Search.
+Os melhores modelos foram os da família de árvore como o XGBoost e o LGBM, também utilizo o Balanced Random Forest para testar a performance do modelo em balancear os dados, devido a performance similar decido utilizar o LGBM pela sua velocidade e pouco uso de memória, por último o modelo é otimizado através do Bayesian Search.
 
 # 6. Business Results
 
-As performances a seguir serão construidas em dados de teste representado 74.487 clientes, deste 9010 são interessado em seguro.
+As performances a seguir serão construídas em dados de teste representado 74.487 clientes, deste 9010 são interessados em seguro.
 
-Estabeleço as seguindos métricas:
+Estabeleço as seguindo métricas:
 - O ticket anual para o seguro de carro no valor de Rs 4.273,83
-- Todos os 9010 interessados estarão aceitando o novo produto.
+- Todos os 9010 interessados aceitarão o novo produto.
 
 ## No problema estabelecido de 20.000 ligações teremos:
 
@@ -138,20 +138,20 @@ A implementação do modelo representa um aumento de 2.55 vezes a receita espera
 ## 6.1 Deploy model to Google Sheets
 ![deploy_google_sheets](https://github.com/SamuelOliveirads/Health_Insurance_Cross_Sell/blob/76d86b74234dd3ef9725f4132767a7cf1cf4da0a/docs/google_sheets.png)
 
-Finalizo o projeto disponibilizando o acesso as predições do modelos no Google planilhas onde permite a equipe preencher novos clientes e verificar sua propenção ao novo produto [Acesso a planilha](https://docs.google.com/spreadsheets/d/1SRCt2r6zaFXkofO31sSk-nQJMJmJoTolRJBZgAKsntU/edit?usp=sharing).
+Finalizo o projeto disponibilizando o acesso as predições do modelos no Google planilhas onde permite a equipe preencher novos clientes e verificar sua propensão ao novo produto [Acesso a planilha](https://docs.google.com/spreadsheets/d/1SRCt2r6zaFXkofO31sSk-nQJMJmJoTolRJBZgAKsntU/edit?usp=sharing).
 
 # 7. Lessons Learned
 
-- **Balanceamento:** O desbalanceamento dos dados podem causar grandes impactos no aprendizado do modelo, para evitar o viés compreendi sobre balanceamento de dados e balanceamento no próprio modelo, na prática os dados tendem a serem desbalanceados o que soma a um grande aprendizado.
+- **Balanceamento:** O desbalanceamento dos dados pode causar grandes impactos no aprendizado do modelo, para evitar o viés compreendi sobre balanceamento de dados e balanceamento no próprio modelo, na prática os dados tendem a serem desbalanceados o que soma a um grande aprendizado.
 - **Métricas:** Problemas Rank to learn envolvem outras métricas e o desbalanceamento dos dados também, trabalhar com esses fatores trouxe grande entendimento sobre como observar a performance do modelo e como mensurar o resultado financeiro.
 - **Organização de projetos:** Implementei uma nova estrutura de pastas e arquivos para o projeto que visam organização e facilidade em localizar, é importante trabalhar essa etapa para evitar problemas com grandes projetos.
-- **Entendimento do negócio:** A maior habilidade que atribuo a este projeto foi o tempo e conhecimento necessários para entender o modelo de negócio e trabalhar com o projeto ponta a ponta focado na visão financeira, definitivamente trás novas abordagens que fazem mais sentido para a realidade da empresa.
+- **Entendimento do negócio:** A maior habilidade que atribuo a este projeto foi o tempo e conhecimento necessários para entender o modelo de negócio e trabalhar com o projeto ponta a ponta focado na visão financeira, definitivamente traz novas abordagens que fazem mais sentido para a realidade da empresa.
 
 # 8. Next Steps to Improve
 
 - **Feature Engineering:** Este problema possui poucas features a serem exploradas, trabalhar em novas features certamente trará resultados.
 - **Análise exploratória de dados:** uma exploração detalhada nas principais variáveis que impactam o modelo, mas principalmente novos Insights através das hipóteses.
-- **Precisão dos modelos:** Observar os principais erros nas predições e entender o porque, também testar novos modelos com foco em minimizar os falsos positivos e negativos.
+- **Precisão dos modelos:** Observar os principais erros nas predições e entender o porquê, também testar novos modelos com foco em minimizar os falsos positivos e negativos.
 
 # LICENSE
 

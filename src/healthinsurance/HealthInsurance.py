@@ -5,12 +5,12 @@ import pandas as pd
 class HealthInsurance:
 
     def __init__(self):
-        self.annual_premium_scaler = pickle.load(open('features/annual_premium_scaler.pkl', 'rb'))
-        self.age_scaler = pickle.load(open('features/age_scaler.pkl', 'rb'))
-        self.policy_sales_scaler = pickle.load(open('features/fe_policy_sales_channel.pkl', 'rb'))
-        self.target_encode_gender = pickle.load(open('features/target_encode_gender.pkl', 'rb'))
-        self.target_encode_region_code = pickle.load(open('features/target_encode_region_code.pkl', 'rb'))
-        self.vintage_scaler = pickle.load(open('features/vintage_scaler.pkl', 'rb'))
+        self.annual_premium_scaler = pickle.load(open('../features/annual_premium_scaler.pkl', 'rb'))
+        self.age_scaler = pickle.load(open('../features/age_scaler.pkl', 'rb'))
+        self.policy_sales_scaler = pickle.load(open('../features/fe_policy_sales_channel.pkl', 'rb'))
+        self.target_encode_gender = pickle.load(open('../features/target_encode_gender.pkl', 'rb'))
+        self.target_encode_region_code = pickle.load(open('../features/target_encode_region_code.pkl', 'rb'))
+        self.vintage_scaler = pickle.load(open('../features/vintage_scaler.pkl', 'rb'))
 
 
     def data_cleaning(self, df1):
